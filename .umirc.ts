@@ -3,5 +3,5 @@ export default {
     chrome: 79
   },
   devtool: 'source-map',
-  // mfsu: false
+  mfsu: false
 };
