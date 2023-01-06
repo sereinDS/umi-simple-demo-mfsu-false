@@ -1,20 +1,15 @@
-import { history, useNavigate } from 'umi';
+import yayJpg from '../assets/yay.jpg';
 
 export default function HomePage() {
-  const navigate=useNavigate()
-  const onClick=()=>{
-    console.log(history)
-    history.push({
-      pathname: '/detail',
-      search:'?test=123',
-    },{
-      test:'123'
-    });
-  }
-
   return (
     <div>
-      <a onClick={onClick}>点击1</a>
+      <h2>Yay! Welcome to umi change something!</h2>
+      <p>
+        <img src={yayJpg} width="388" />
+      </p>
+      <p>
+        To get started, edit <code>pages/index.tsx</code> and save to reload.
+      </p>
     </div>
   );
 }

@@ -1,7 +1,6 @@
-export default {
-  targets: {
-    chrome: 79
-  },
-  devtool: 'source-map',
+import { defineConfig } from "umi";
+
+export default defineConfig({
+  npmClient: 'yarn',
   mfsu: false
-};
+});
